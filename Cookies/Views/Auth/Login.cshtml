@@ -1,0 +1,19 @@
+﻿@model UserLoginModel
+
+
+@using (Html.BeginForm("Login","Auth",FormMethod.Post))
+{
+    @Html.TextBoxFor(x => x.UserName)
+
+    @Html.TextBoxFor(x => x.Password)
+    <input type="submit" value="Giriş" />
+}
+
+
+@if (string.IsNullOrWhiteSpace(ViewBag.NotFound)) {
+    <label>@ViewBag.NotFound</label>
+}
+
+
+
+

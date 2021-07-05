@@ -1,0 +1,36 @@
+﻿@model UserViewModel
+
+<table>
+    <tr>
+        <td>
+            Ad/Soyad
+        </td>
+        <td>
+            @Model.NameLastName
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Yaş
+        </td>
+        <td>
+            @Model.Age
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Hobiler
+        </td>
+        <td>
+            @string.Join(',', Model.Hobbies)
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            @Html.ActionLink("Çıkış","Logout","Auth")
+            
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,36 @@
+﻿@model UserViewModel
+
+<table>
+    <tr>
+        <td>
+            Ad
+        </td>
+        <td>
+            @Model.Name,
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Soyad
+        </td>
+        <td>
+            @Model.LastName
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Yaş
+        </td>
+        <td>
+            @Model.Age
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Hobiler
+        </td>
+        <td>
+          @string.Join(',',Model.Hobbies)
+        </td>
+    </tr>
+</table>
